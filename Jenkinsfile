@@ -26,7 +26,7 @@ pipeline {
     stage('Deploy') {
       steps {
         sh 'rm -rf /home/shirasao-ems/htdocs/ems.shirasao.com/*'
-        sh 'cp -r /root/.jenkins/workspace/ems.shirasao.com/dist/UI/browser/* /home/shirasao-ems/htdocs/ems.shirasao.com/'
+        sh 'cp -r /root/.jenkins/workspace/ems.shirasao.com/dist/browser/* /home/shirasao-ems/htdocs/ems.shirasao.com/'
       }
     }
   }
