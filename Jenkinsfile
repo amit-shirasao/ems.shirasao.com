@@ -14,7 +14,6 @@ pipeline {
     }
     stage('Checkout') {
       steps {
-        // This checks out the latest code in the now-clean workspace
         checkout scm
       }
     }
